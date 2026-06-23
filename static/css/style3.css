@@ -44,7 +44,7 @@ body {
   margin: 0;
   font-size: 2rem;
   font-weight: 400;
-  color: #117c23;
+  color: #fcfcfc;
 }
 
 .challenge-part-of {
@@ -86,7 +86,7 @@ body {
           animation: showUp 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 .hb-container .twentyseven {
-  font-size: 15rem;
+  font-size: 7rem;
   color: #1f2938;
   font-weight: 900;
   -webkit-animation: blinkColor 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite forwards 0.7s;
@@ -94,6 +94,18 @@ body {
   text-shadow: 0 0 10px transparent;
   /*text-align: center;*/
 }
+
+.hb-container .congrat {
+  font-size: 10rem;
+  color: #1f2938;
+  font-weight: 900;
+  -webkit-animation: blinkColor2 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite forwards 0.7s;
+          animation: blinkColor2 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite forwards 0.7s;
+  text-shadow: 0 0 10px transparent;
+  /*text-align: center;*/
+}
+
+
 .hb-container .birthday {
   font-size: 8rem;
   color: white;
@@ -105,8 +117,8 @@ body {
 }
 .hb-container .ballon {
   position: absolute;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 250px;
   -webkit-animation: idle 6s ease-in-out infinite;
           animation: idle 6s ease-in-out infinite;
 }
@@ -116,8 +128,8 @@ body {
   height: 100%;
 }
 .hb-container .ballon:nth-of-type(1) {
-  top: -150px;
-  left: -130px;
+  top: -275px;
+  left: 25px;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
@@ -125,8 +137,8 @@ body {
   fill: #6eeb83;
 }
 .hb-container .ballon:nth-of-type(2) {
-  top: -50px;
-  left: -260px;
+  top: -170px;
+  right: -70px;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
@@ -134,8 +146,8 @@ body {
   fill: #1be7ff;
 }
 .hb-container .ballon:nth-of-type(3) {
-  top: -150px;
-  right: -150px;
+  top: -275px;
+  right: 75px;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
@@ -143,8 +155,8 @@ body {
   fill: #e4ff1a;
 }
 .hb-container .ballon:nth-of-type(4) {
-  top: -40px;
-  right: -300px;
+  top: -170px;
+  right: -75px;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -242,6 +254,68 @@ body {
     text-shadow: 0 0 10px #6eeb83;
   }
 }
+
+@-webkit-keyframes blinkColor2 {
+  78% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  79% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  81% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  82% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  83% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  92% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  92.5% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+}
+@keyframes blinkColor2 {
+  78% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  79% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  81% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  82% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  83% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+  92% {
+    color: #1f2938;
+    text-shadow: 0 0 1px #e500a4;
+  }
+  92.5% {
+    color: #eb6eda;
+    text-shadow: 0 0 10px #eb6eda;
+  }
+}
+
 @-webkit-keyframes showDown {
   from {
     transform: translateY(-85px);

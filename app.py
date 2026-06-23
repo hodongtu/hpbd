@@ -10,11 +10,15 @@ app.secret_key = os.getenv('SECRET_KEY', 'secret string tuhd2')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('intro.html')
+
+@app.route('/countdown')
+def countdown():
+    return render_template('countdown.html')
 
 @app.route('/hpbd')
 def hpbd():
     return render_template('hpbd.html')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
