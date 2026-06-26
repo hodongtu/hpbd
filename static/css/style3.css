@@ -14,6 +14,34 @@
   overflow: hidden;
 }
 
+/* =========================
+   8. Tablet Responsive
+========================= */
+@media (max-width: 1024px) {
+  .hb-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* =========================
+   9. Mobile Responsive
+========================= */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   10. Small Mobile
+========================= */
+@media (max-width: 480px) {
+  .hb-container {
+    width: min(100% - 1rem, 1200px);
+  }
+}
+
 html {
   font-size: 16px;
 }
@@ -114,6 +142,11 @@ body {
   padding: 1rem 0;
   -webkit-animation: showDown 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.4s;
           animation: showDown 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 .hb-container .ballon {
   position: absolute;
